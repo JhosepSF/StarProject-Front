@@ -32,7 +32,7 @@ const Perfil = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/usuario/verusuarioporusername/${username}`, {
+        const response = await fetch(`http://archivo.app.informaticapp.com:9888/usuario/verusuarioporusername/${username}`, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,
@@ -104,10 +104,10 @@ const Perfil = () => {
                 <hr />
                 <div className="row">
                   <div className="col-sm-3">
-                    <p className="mb-0">Phone</p> {/* Agregado campo Phone */}
+                    <p className="mb-0">Phone</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">{userData.phone}</p> {/* Utiliza userData.phone para mostrar el teléfono */}
+                    <p className="text-muted mb-0">{userData.phone}</p>
                   </div>
                 </div>
                 <hr />

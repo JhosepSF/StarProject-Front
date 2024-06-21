@@ -57,7 +57,7 @@ const MultiStepForm = () => {
     console.log(UsuarioRequest);
 
     try {
-      const response = await fetch('http://localhost:8080/usuario/nuevousuario', {
+      const response = await fetch('http://archivo.app.informaticapp.com:9888/usuario/nuevousuario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

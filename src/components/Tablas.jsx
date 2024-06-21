@@ -19,7 +19,7 @@ export default function Tablas() {
       const message = localStorage.getItem('navMessage');
 
       try {
-        const response = await fetch(`http://localhost:8080/documentos/${message}`, {
+        const response = await fetch(`http://archivo.app.informaticapp.com:9888/documentos/${message}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ export default function Tablas() {
         setFilteredDocumentos(data);
 
         const idcriteriomayor = message.split("/").pop();
-        const subcriteriosResponse = await fetch(`http://localhost:8080/tipocriterio/vercriterio/criteriomayor/${idcriteriomayor}`, {
+        const subcriteriosResponse = await fetch(`http://archivo.app.informaticapp.com:9888/tipocriterio/vercriterio/criteriomayor/${idcriteriomayor}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
