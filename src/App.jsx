@@ -28,7 +28,7 @@ function App() {
           {/* demas rutas */}
           <Route path="/login" element={<IniciarSesion />} />
           <Route path="/panelprincipal" element={<PanelPrincipal />} />
-          <Route path="https://starproject-front.onrender.com/paginaprincipal" element={<PaginaPrincipal />} />
+          <Route path="/paginaprincipal" element={<PaginaPrincipal />} />
           <Route path="/tablas" element={<VistaTablas />} />
           <Route path="/verpdf" element={<VerDocumento />} />
         </Routes>
