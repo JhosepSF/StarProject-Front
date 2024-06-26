@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://archivo.app.informaticapp.com:9888/auth/logout", {
+      const response = await fetch("https://archivo.app.informaticapp.com/auth/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="h-14 w-auto"
-                    src="../../unsm.png"
+                    src="../../../unsm.png"
                     alt="Your Company"
                   />
                 </div>

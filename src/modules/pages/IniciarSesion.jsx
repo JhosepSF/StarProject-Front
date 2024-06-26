@@ -18,7 +18,7 @@ export function IniciarSesion() {
     };
 
     try {
-      const response = await fetch("http://archivo.app.informaticapp.com:9888/auth/login", {
+      const response = await fetch("https://archivo.app.informaticapp.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
