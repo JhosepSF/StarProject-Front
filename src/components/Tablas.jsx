@@ -19,7 +19,7 @@ export default function Tablas() {
       const message = localStorage.getItem('navMessage');
 
       try {
-        const response = await fetch(`http://archivo.app.informaticapp.com:9887/documentos/${message}`, {
+        const response = await fetch(`https://archivo.app.informaticapp.com:9887/documentos/${message}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
