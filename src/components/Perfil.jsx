@@ -32,7 +32,7 @@ const Perfil = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`https://archivo.app.informaticapp.com/usuario/verusuarioporusername/${username}`, {
+        const response = await fetch(`https://archivo.app.informaticapp.com:9887/usuario/verusuarioporusername/${username}`, {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,

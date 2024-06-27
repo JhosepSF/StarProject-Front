@@ -18,7 +18,7 @@ export default function DocumentoDetalle() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://archivo.app.informaticapp.com/documentos/verdocumento/${documentId}`);
+        const response = await fetch(`https://archivo.app.informaticapp.com:9887/documentos/verdocumento/${documentId}`);
         if (!response.ok) {
           throw new Error("Error al obtener el documento");
         }
@@ -35,7 +35,7 @@ export default function DocumentoDetalle() {
   useEffect(() => {
     const fetchPdf = async () => {
       try {
-        const response = await fetch(`https://archivo.app.informaticapp.com/documentos/verdocumento/${documentId}/pdf`);
+        const response = await fetch(`https://archivo.app.informaticapp.com:9887/documentos/verdocumento/${documentId}/pdf`);
         if (!response.ok) {
           throw new Error("Error al obtener el PDF del documento");
         }

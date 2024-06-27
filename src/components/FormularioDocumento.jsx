@@ -22,7 +22,7 @@ const FormularioDocumento = () => {
   useEffect(() => {
     const fetchCriterios = async () => {
       try {
-        const response = await fetch('https://archivo.app.informaticapp.com/tipocriterio/vercriterio/tipocriterios', {
+        const response = await fetch('https://archivo.app.informaticapp.com:9887/tipocriterio/vercriterio/tipocriterios', {
           headers: {
             'Content-Type': 'application/json',
           },
@@ -69,7 +69,7 @@ const FormularioDocumento = () => {
     }
 
     try {
-      const response = await fetch('https://archivo.app.informaticapp.com/documentos/nuevodocumento', {
+      const response = await fetch('https://archivo.app.informaticapp.com:9887/documentos/nuevodocumento', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

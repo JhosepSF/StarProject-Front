@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("https://archivo.app.informaticapp.com/auth/logout", {
+      const response = await fetch("https://archivo.app.informaticapp.com:9887/auth/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
